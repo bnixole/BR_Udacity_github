@@ -4,7 +4,7 @@
 12-24-21
 
 ### Project Title
-BR_Udacity_bithub
+BR_Udacity_github
 
 ### Description
 Describe what your project is about and what it does
