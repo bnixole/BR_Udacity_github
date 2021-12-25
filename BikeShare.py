@@ -6,7 +6,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
-def get_city():
+def Pull_location():
     """
     Asks user to specify a city
     Returns:
@@ -222,7 +222,7 @@ def raw_data(df):
     
 def main():
     while True:
-        city = get_city()
+        city = Pull_location()
         df = pd.read_csv(CITY_DATA[city], parse_dates = ['Start Time', 'End Time'])
 
         df['Start Time'] = pd.to_datetime(df['Start Time'])
