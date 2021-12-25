@@ -81,7 +81,7 @@ def time_stats(df):
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
 
-    # Display the most common month
+    # Display the most common month in the data set
     
     months = ['January', 'February', 'March', 'April', 'May', 'June']
     value = int(df['Start Time'].dt.month.mode())
@@ -113,7 +113,7 @@ def station_stats(df):
     value_start = df['Start Station'].mode().to_string(index = False)
     print('\nThe most commonly used start station is {}'.format(value_start))
 
-    # display most commonly used end station
+    # display most commonly used return station
     value_end = df['End Station'].mode().to_string(index = False)
     print('\nThe most commonly used end station is {}'.format(value_end))
 
