@@ -221,6 +221,7 @@ def raw_data(df):
     
     
 def main():
+    # While loop to run all necessary functions 
     while True:
         city = get_city()
         df = pd.read_csv(CITY_DATA[city], parse_dates = ['Start Time', 'End Time'])

@@ -7,11 +7,11 @@
 BR_Udacity_github
 
 ### Description
-Udacity Project 3
+Udacity Project 3 github 
 
 ### Files used
-Include the files used
+bikeshare.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+https://udacity.github.io/git-styleguide/
 
