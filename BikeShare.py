@@ -6,7 +6,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
-def get_city():
+def Pull_location():
     """
     Asks user to specify a city
     Returns:
@@ -81,7 +81,7 @@ def time_stats(df):
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
 
-    # Display the most common month
+    # Display the most common month in the data set
     
     months = ['January', 'February', 'March', 'April', 'May', 'June']
     value = int(df['Start Time'].dt.month.mode())
@@ -113,7 +113,7 @@ def station_stats(df):
     value_start = df['Start Station'].mode().to_string(index = False)
     print('\nThe most commonly used start station is {}'.format(value_start))
 
-    # display most commonly used end station
+    # display most commonly used return station
     value_end = df['End Station'].mode().to_string(index = False)
     print('\nThe most commonly used end station is {}'.format(value_end))
 
@@ -223,7 +223,7 @@ def raw_data(df):
 def main():
     # While loop to run all necessary functions 
     while True:
-        city = get_city()
+        city = Pull_location()
         df = pd.read_csv(CITY_DATA[city], parse_dates = ['Start Time', 'End Time'])
 
         df['Start Time'] = pd.to_datetime(df['Start Time'])
