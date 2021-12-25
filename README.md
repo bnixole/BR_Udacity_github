@@ -7,7 +7,7 @@
 BR_Udacity_github
 
 ### Description
-Describe what your project is about and what it does
+Udacity Project 3
 
 ### Files used
 Include the files used
